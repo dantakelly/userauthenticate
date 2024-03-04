@@ -1,0 +1,2 @@
+The main of the mini project is to make a simple website that prompts the 
+user to register or signup before reaching the main page.

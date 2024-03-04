@@ -1,0 +1,205 @@
+/* All imports */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+/* All imports closed */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(180deg, #FFAD84, #FFF78A);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Main Page Code */
+.mainPageH{ 
+    background-color: pink;
+    color: rgb(189, 41, 90);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Main Page Code closed */
+
+
+/* Home page code below */
+.home-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    min-height: 70vh;
+}
+
+.home-h1{ 
+    font-size: 45px;
+}
+
+.home-p{ 
+    font-size: 20px;
+}
+
+.buttons-container-homePage{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.register-button, .login-button{ 
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 0px 20px #f26b27; 
+    border-radius: 10px;
+    transition: all 0.4s ease;
+
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+.register-button:hover{ 
+    background-color: #FFAD84;
+    color: white;
+}
+.login-button:hover{ 
+    background-color: #FFAD84;
+    color: white;
+}
+
+.login-button{ 
+    padding: 20px 35px;
+}
+/* Main Page Code closed */
+
+
+/* Registration Page */
+.Registration-Form{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.registerLabel{ 
+    font-size: 30px;
+}
+
+#name-register-input, #email-register-input, #password-register-input{
+    border: none;
+    padding: 13px 60px;
+    border-radius: 10px;
+    background-color:  #e3db69;
+    font-weight: bolder;
+    border: solid black;
+
+    /* box-shadow: 0px 0px 20px #f26b27;  */
+    transition: all 0.4s ease;
+}
+
+
+.registerEmail-container input, /*the input within this code os the child of the container, meaning that the child is the one being targeted*/
+.registerName-container input,
+.registerPassword-container input {
+    display: block;
+}
+
+.registerEmail-container input::placeholder, /*the input within this code os the child of the container, meaning that the child is the one being targeted*/
+.registerName-container input::placeholder,
+.registerPassword-container input::placeholder {
+    position: relative;
+    right: 45px;
+}
+
+.registerButton-in-registrationForm{ 
+    padding: 11px 40px;
+    border: none;
+    /* box-shadow: 0px 0px 20px #f26b27;  */
+    border-radius: 10px;
+    border: solid black;
+    transition: all 0.4s ease;
+
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+.registerButton-in-registrationForm:hover{ 
+    background-color: #FFAD84;
+    color: white;
+}
+
+#name-register-input:hover,
+#email-register-input:hover,
+#password-register-input:hover{
+    background-color:  #FFF78A;
+}
+
+.overlaybox-forTheForm{ 
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #f26b27; 
+
+    position: absolute;
+    z-index: -999;
+}
+
+.Registration-Form{ 
+    position: relative;
+}
+
+.registerGoogle-container a{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 1px;
+    top: 5px;
+    left: 40px;
+
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+}
+
+.registerGoogle-container svg{ 
+    width: 38px;
+}
+
+.registerGoogle-container{ 
+    border: none;
+    /* padding: 13px 60px; */
+    border-radius: 60px;
+    background-color:  #FFAD84;
+    font-weight: bolder;
+    border: solid black;
+    cursor: pointer;
+
+    width: 300px !important;
+    height: 60px !important;
+
+    position: relative;
+    top: 10px;
+}
+/* Registration Page Closed */
+
+/* login Page */
+/* 
+    I will be using the registration styling above
+    for the login form :)
+ */
+/* Login Page Closed */
